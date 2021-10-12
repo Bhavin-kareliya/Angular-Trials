@@ -1,13 +1,15 @@
-<h1>Routing Demo</h1>
+<h1>Home Page</h1>
 
-<h4>Admin Modules</h4>
-<a routerLink="admin/signin">SignIn Page</a>
-<br><br>
-<a routerLink="admin/list">List Users</a>
-<br><br><br><br>
-<h4>Users Modules</h4>
-<a routerLink="users/signin">SignIn Page</a>
-<br><br>
-<a routerLink="users/signup">SignUp Page</a>
+<h2>Admin Menu</h2>
+<ul style="display: flex;">
+  <li style="background-color: #ddd;padding: 5px 20px;list-style: none;margin: 0px 5px;"><a href="admin/login">Login</a></li>
+  <li style="background-color: #ddd;padding: 5px 10px;list-style: none;margin: 0px 5px;"><a href="admin/list">List</a></li>
+</ul>
+
+<h2>User Menu</h2>
+<ul style="display: flex;">
+  <li style="background-color: #ddd;padding: 5px 20px;list-style: none;margin: 0px 5px;"><a href="user/login">Login</a></li>
+  <li style="background-color: #ddd;padding: 5px 10px;list-style: none;margin: 0px 5px;"><a href="user/list">List</a></li>
+</ul>
 
 <router-outlet></router-outlet>
